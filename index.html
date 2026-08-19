@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kendells Bistro | French Restaurant, Leeds City Centre</title>
+<meta name="description" content="Kendells Bistro — a candlelit French bistro at 3 St Peters Square, Leeds. Quality food, wine and service, cooked with no fuss. Book a table today.">
+<meta name="keywords" content="French restaurant Leeds, French bistro Leeds, romantic restaurant Leeds, restaurants near St Peters Square Leeds">
+<link rel="canonical" href="https://www.kendellsbistro.co.uk/">
+
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:title" content="Kendells Bistro | French Restaurant, Leeds City Centre">
+<meta property="og:description" content="A candlelit French bistro in the heart of Leeds. Quality food, wine and service — no fuss.">
+<meta property="og:url" content="https://www.kendellsbistro.co.uk/">
+<meta property="og:site_name" content="Kendells Bistro">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kendells Bistro | French Restaurant, Leeds City Centre">
+<meta name="twitter:description" content="A candlelit French bistro in the heart of Leeds. Quality food, wine and service — no fuss.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Kendells Bistro",
+  "servesCuisine": "French",
+  "priceRange": "££",
+  "telephone": "+44-113-243-6553",
+  "email": "Info@kendellsbistro.co.uk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3 St Peters Square",
+    "addressLocality": "Leeds",
+    "addressRegion": "West Yorkshire",
+    "addressCountry": "GB"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"17:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"17:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"17:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"17:00","closes":"21:30"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"17:00","closes":"21:30"}
+  ],
+  "url": "https://www.kendellsbistro.co.uk/"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --charcoal: #16130f;
+  --charcoal-2: #1d1912;
+  --charcoal-3: #241f17;
+  --ivory: #f4ede0;
+  --ivory-dim: #e7dcc4;
+  --ink: #23201a;
+  --burgundy: #6d1a2b;
+  --burgundy-2: #4e0f1e;
+  --burgundy-light: #96324a;
+  --gold: #c8a25c;
+  --gold-dim: #a9863f;
+  --stone: #a89877;
+  --line: rgba(200,162,92,0.22);
+  --line-dark: rgba(244,237,224,0.12);
+
+  --serif: 'Cormorant Garamond', serif;
+  --sans: 'Manrope', sans-serif;
+  --chalk: 'Caveat', cursive;
+
+  --ease: cubic-bezier(.22,1,.36,1);
+  --nav-h: 84px;
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--ivory);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-weight:400;
+  line-height:1.6;
+  overflow-x:hidden;
+  cursor:none;
+}
+@media (max-width: 860px){ body{ cursor:auto; } }
+
+img{max-width:100%; display:block;}
+a{color:inherit; text-decoration:none;}
+button{font-family:inherit; cursor:pointer; border:none; background:none; color:inherit;}
+ul{list-style:none;}
+h1,h2,h3,h4{font-family:var(--serif); font-weight:500; line-height:1.05; letter-spacing:-0.01em;}
+
+.eyebrow{
+  font-family:var(--sans);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:var(--gold-dim);
+}
+.eyebrow.on-dark{ color:var(--gold); }
+
+.wrap{max-width:1280px; margin:0 auto; padding:0 6vw;}
+@media (max-width:640px){ .wrap{padding:0 24px;} }
+
+.reveal{ opacity:0; transform:translateY(28px); }
+
+/* ============ PHOTOGRAPHY ============ */
+.photo{ position:relative; overflow:hidden; background:#0c0a08; }
+.photo img{ width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.05) contrast(1.04) sepia(0.05); transition:transform 1.3s var(--ease); }
+.photo:hover img{ transform:scale(1.035); }
+.photo-cap{ margin-top:12px; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--stone); }
+
+.media-cover{ position:absolute; inset:0; z-index:0; overflow:hidden; }
+.media-cover img{ width:100%; height:100%; object-fit:cover; filter:saturate(1.08) contrast(1.05); }
+.media-scrim{ position:absolute; inset:0; z-index:1; }
+
+.hero-media img{ opacity:0.55; }
+.hero-media .media-scrim{ background:linear-gradient(180deg, rgba(12,10,8,0.22) 0%, rgba(12,10,8,0.5) 45%, rgba(12,10,8,0.94) 100%); }
+
+.intro-inline-photo{ aspect-ratio:16/10; margin:34px 0; border:1px solid var(--line); }
+.story-photo{ aspect-ratio:16/11; margin-bottom:22px; border:1px solid var(--line-dark); }
+
+.menu-strip{ display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-bottom:64px; border:1px solid var(--line-dark); }
+.menu-strip .photo{ aspect-ratio:4/5; }
+@media (max-width:640px){ .menu-strip{ grid-template-columns:1fr; } }
+
+.wine-photo{ aspect-ratio:4/5; max-width:380px; margin:0 auto; border:1px solid var(--line); }
+
+#atmosphere .media-cover img{ opacity:0.4; }
+#atmosphere .media-scrim{ background:
+    radial-gradient(ellipse 55% 60% at 22% 28%, rgba(109,26,43,0.5), transparent 60%),
+    radial-gradient(ellipse 50% 55% at 85% 72%, rgba(200,162,92,0.2), transparent 60%),
+    linear-gradient(180deg, rgba(12,10,8,0.45), rgba(12,10,8,0.88)); }
+
+#book .media-cover img{ opacity:0.38; }
+#book .media-scrim{ background:linear-gradient(160deg, rgba(12,10,8,0.6), rgba(12,10,8,0.94)); }
+
+.moment-card{ position:relative; overflow:hidden; }
+.moment-card .mc-img{ position:absolute; inset:0; z-index:0; }
+.moment-card .mc-img img{ width:100%; height:100%; object-fit:cover; filter:saturate(1.05) contrast(1.08) brightness(0.7); transition:transform 1.3s var(--ease); }
+.moment-card:hover .mc-img img{ transform:scale(1.06); }
+.moment-card .mc-scrim{ position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(12,10,8,0.1) 0%, rgba(12,10,8,0.82) 78%); }
+.moment-card > *:not(.mc-img):not(.mc-scrim){ position:relative; z-index:2; }
+.moment-card svg{ opacity:0.85; }
+
+/* ============ CUSTOM CURSOR ============ */
+#cursor{
+  position:fixed; top:0; left:0; width:10px; height:10px; border-radius:50%;
+  background:var(--gold); pointer-events:none; z-index:9999; mix-blend-mode:difference;
+  transform:translate(-50%,-50%); transition:width .25s var(--ease), height .25s var(--ease), background .25s var(--ease);
+}
+#cursor.grow{ width:52px; height:52px; background:rgba(244,237,224,0.9); }
+@media (max-width:860px){ #cursor{display:none;} }
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:var(--sans); font-weight:700; font-size:12.5px; letter-spacing:0.16em; text-transform:uppercase;
+  padding:16px 30px; position:relative; overflow:hidden; white-space:nowrap;
+}
+.btn .arrow{ transition:transform .35s var(--ease); }
+.btn:hover .arrow{ transform:translateX(5px); }
+
+.btn-solid{
+  background:var(--burgundy); color:var(--ivory); border:1px solid var(--burgundy);
+}
+.btn-solid:hover{ background:var(--burgundy-2); }
+
+.btn-outline{
+  border:1px solid var(--line-dark); color:var(--ivory);
+}
+.btn-outline.on-light{ border:1px solid rgba(35,32,26,0.25); color:var(--ink); }
+.btn-outline:hover{ border-color:var(--gold); color:var(--gold); }
+
+.btn-line{
+  padding:0; border:none; border-bottom:1px solid currentColor; border-radius:0;
+  font-family:var(--sans); font-weight:700; font-size:12px; letter-spacing:0.16em; text-transform:uppercase;
+}
+
+/* ============ NAV ============ */
+header#site-nav{
+  position:fixed; top:0; left:0; width:100%; z-index:500;
+  height:var(--nav-h);
+  display:flex; align-items:center;
+  transition:background .5s var(--ease), height .5s var(--ease), border-color .5s var(--ease), backdrop-filter .5s var(--ease);
+  border-bottom:1px solid transparent;
+}
+header#site-nav.scrolled{
+  height:66px;
+  background:rgba(22,19,15,0.86);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-dark);
+}
+.nav-inner{
+  width:100%; max-width:1400px; margin:0 auto; padding:0 5vw;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.logo{
+  font-family:var(--serif); font-size:23px; letter-spacing:0.02em; color:var(--ivory); font-weight:600;
+  display:flex; flex-direction:column; line-height:1;
+}
+.logo span{ font-family:var(--sans); font-size:9px; letter-spacing:0.3em; color:var(--gold); font-weight:700; margin-top:5px; }
+
+nav.primary-links{ display:flex; align-items:center; gap:40px; }
+nav.primary-links a{
+  font-size:12.5px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--ivory-dim);
+  position:relative; padding-bottom:4px;
+}
+nav.primary-links a::after{
+  content:''; position:absolute; left:0; bottom:0; width:0; height:1px; background:var(--gold);
+  transition:width .35s var(--ease);
+}
+nav.primary-links a:hover::after{ width:100%; }
+nav.primary-links a:hover{ color:var(--ivory); }
+
+.nav-right{ display:flex; align-items:center; gap:24px; }
+.nav-cta{
+  border:1px solid var(--gold); color:var(--gold);
+  font-size:11.5px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase;
+  padding:12px 22px; transition:all .35s var(--ease);
+}
+.nav-cta:hover{ background:var(--gold); color:var(--charcoal); }
+
+.burger{ display:none; flex-direction:column; gap:5px; width:26px; z-index:600; }
+.burger span{ height:1px; width:100%; background:var(--ivory); transition:all .3s var(--ease); }
+
+@media (max-width:980px){
+  nav.primary-links{ display:none; }
+  .nav-cta{ display:none; }
+  .burger{ display:flex; }
+}
+
+/* mobile nav overlay */
+#mobile-nav{
+  position:fixed; inset:0; background:var(--charcoal); z-index:550;
+  display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+  padding:10vw 8vw; gap:22px;
+  transform:translateY(-100%); transition:transform .55s var(--ease);
+}
+#mobile-nav.open{ transform:translateY(0); }
+#mobile-nav a{
+  font-family:var(--serif); font-size:38px; color:var(--ivory); font-weight:500;
+}
+#mobile-nav .mnav-book{
+  margin-top:20px; font-family:var(--sans); font-size:13px; letter-spacing:0.16em;
+  border:1px solid var(--gold); color:var(--gold); padding:16px 26px; text-transform:uppercase; font-weight:700;
+}
+#mobile-nav .mnav-meta{ margin-top:auto; padding-top:30px; border-top:1px solid var(--line-dark); width:100%; }
+#mobile-nav .mnav-meta p{ font-size:13px; color:var(--stone); font-family:var(--sans); }
+
+/* ============ HERO ============ */
+#hero{
+  position:relative; min-height:100vh; display:flex; align-items:flex-end;
+  background:
+    radial-gradient(ellipse 70% 60% at 30% 20%, rgba(109,26,43,0.35), transparent 60%),
+    radial-gradient(ellipse 55% 45% at 78% 75%, rgba(200,162,92,0.16), transparent 65%),
+    linear-gradient(160deg, #1c1610 0%, #100d0a 60%, #0c0a08 100%);
+  overflow:hidden;
+}
+#hero::before{
+  content:''; position:absolute; inset:0;
+  background-image:
+    repeating-linear-gradient(115deg, rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px, transparent 1px, transparent 3px);
+  opacity:.5; pointer-events:none;
+}
+.hero-glow{
+  position:absolute; width:60vw; height:60vw; border-radius:50%;
+  background:radial-gradient(circle, rgba(200,162,92,0.14), transparent 70%);
+  top:-10%; right:-15%; filter:blur(10px); pointer-events:none;
+}
+.hero-inner{ position:relative; z-index:2; width:100%; padding:calc(var(--nav-h) + 60px) 6vw 90px; }
+.hero-eyebrow{ margin-bottom:26px; display:flex; align-items:center; gap:14px; color:var(--gold); }
+.hero-eyebrow .rule{ width:44px; height:1px; background:var(--gold); }
+h1.hero-title{
+  font-size:clamp(46px, 8.2vw, 118px); color:var(--ivory); font-weight:500;
+  max-width:16ch;
+}
+h1.hero-title em{ font-style:italic; color:var(--gold); font-weight:400; }
+.hero-sub{
+  margin-top:30px; max-width:460px; font-size:17px; color:var(--ivory-dim); font-weight:400; line-height:1.7;
+}
+.hero-cta-row{ margin-top:44px; display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+.hero-foot{
+  position:absolute; bottom:34px; right:6vw; z-index:3; display:flex; flex-direction:column; align-items:center; gap:10px;
+}
+.scroll-indicator{
+  writing-mode:vertical-rl; font-size:10.5px; letter-spacing:0.28em; color:var(--stone); text-transform:uppercase; font-weight:700;
+}
+.scroll-line{ width:1px; height:56px; background:linear-gradient(var(--gold), transparent); animation:scrollpulse 2.2s ease-in-out infinite; }
+@keyframes scrollpulse{ 0%,100%{opacity:.3;} 50%{opacity:1;} }
+
+.hero-illustration{
+  position:absolute; right:6vw; top:16%; width:min(30vw,360px); opacity:.9; z-index:1;
+}
+@media (max-width:860px){ .hero-illustration{ display:none; } }
+
+/* ============ SECTION SCAFFOLD ============ */
+section{ position:relative; }
+.section-pad{ padding:150px 0; }
+@media (max-width:760px){ .section-pad{ padding:100px 0; } }
+.dark{ background:var(--charcoal); color:var(--ivory); }
+.dark .eyebrow{ color:var(--gold); }
+
+.section-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:40px; margin-bottom:70px; flex-wrap:wrap; }
+.section-head h2{ font-size:clamp(34px,4.4vw,58px); margin-top:16px; max-width:16ch; }
+.section-head p.lede{ max-width:340px; font-size:15px; color:var(--stone); line-height:1.75; padding-bottom:6px; }
+.dark .section-head p.lede{ color:var(--ivory-dim); opacity:.75; }
+
+/* ============ INTRO ============ */
+#intro .grid{
+  display:grid; grid-template-columns: 1.1fr 0.9fr; gap:70px; align-items:start;
+}
+@media (max-width:900px){ #intro .grid{ grid-template-columns:1fr; gap:44px; } }
+.intro-copy p{ font-size:17px; color:#4a4335; max-width:52ch; margin-bottom:20px; line-height:1.85; }
+.intro-copy p:first-child{ font-family:var(--serif); font-size:26px; font-style:italic; color:var(--burgundy); line-height:1.5; margin-bottom:26px; }
+.tag-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:34px; }
+.tag{
+  font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; color:var(--burgundy);
+  border:1px solid rgba(109,26,43,0.28); padding:8px 14px;
+}
+
+.intro-panel{
+  border:1px solid var(--line); padding:44px 36px; background:var(--charcoal); color:var(--ivory); position:relative;
+}
+.intro-panel h3{ font-size:26px; margin-bottom:22px; color:var(--gold); }
+.hours-list{ display:flex; flex-direction:column; gap:10px; margin-bottom:26px; }
+.hours-row{ display:flex; justify-content:space-between; font-size:14.5px; padding-bottom:10px; border-bottom:1px dashed var(--line-dark); color:var(--ivory-dim); }
+.hours-row.closed{ opacity:.45; }
+.hours-row b{ color:var(--ivory); font-weight:600; }
+.intro-panel .note{ font-size:12.5px; color:var(--stone); line-height:1.6; }
+
+/* ============ STORY ============ */
+#story{ background:var(--ivory-dim); }
+#story .grid{ display:grid; grid-template-columns: 0.85fr 1.15fr; gap:80px; align-items:center; }
+@media (max-width:900px){ #story .grid{ grid-template-columns:1fr; gap:50px; } }
+.chalkboard{
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.05), transparent 60%),
+    linear-gradient(160deg,#241f17,#161310);
+  border:10px solid #0c0a08;
+  padding:46px 38px; position:relative; box-shadow:0 30px 60px -20px rgba(0,0,0,0.4);
+}
+.chalkboard::after{
+  content:''; position:absolute; inset:0; opacity:.06; pointer-events:none;
+  background-image:radial-gradient(circle, #fff 1px, transparent 1px);
+  background-size:3px 3px;
+}
+.chalk-label{ font-family:var(--chalk); font-size:22px; color:var(--gold); transform:rotate(-1.5deg); display:inline-block; margin-bottom:18px; }
+.chalkboard blockquote{
+  font-family:var(--serif); font-style:italic; font-size:23px; color:var(--ivory); line-height:1.6; margin-bottom:24px;
+}
+.chalkboard .sig{ font-family:var(--chalk); font-size:24px; color:var(--gold); }
+.chalkboard .role{ font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--stone); margin-top:4px; }
+
+.story-copy p{ font-size:17px; color:#4a4335; line-height:1.85; margin-bottom:20px; max-width:56ch; }
+.story-copy h2{ font-size:clamp(32px,4vw,48px); margin-bottom:26px; color:var(--ink); }
+
+/* ============ MENU EXPLORER ============ */
+#menus{ background:var(--charcoal); color:var(--ivory); }
+.menu-tabs{ display:flex; gap:8px; margin-bottom:54px; border-bottom:1px solid var(--line-dark); flex-wrap:wrap; }
+.menu-tab{
+  padding:16px 6px; margin-right:34px; font-size:12.5px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase;
+  color:var(--stone); position:relative; transition:color .3s var(--ease);
+}
+.menu-tab::after{ content:''; position:absolute; left:0; bottom:-1px; width:0; height:2px; background:var(--gold); transition:width .4s var(--ease); }
+.menu-tab.active{ color:var(--ivory); }
+.menu-tab.active::after{ width:100%; }
+
+.menu-panel{ display:none; }
+.menu-panel.active{ display:block; }
+.menu-group{ margin-bottom:52px; }
+.menu-group:last-child{ margin-bottom:0; }
+.menu-group-title{ display:flex; align-items:center; gap:16px; margin-bottom:30px; }
+.menu-group-title h3{ font-size:15px; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:700; font-family:var(--sans); white-space:nowrap; }
+.menu-group-title .rule{ flex:1; height:1px; background:var(--line-dark); }
+
+.menu-items{ display:grid; grid-template-columns:1fr 1fr; gap:0 60px; }
+@media (max-width:820px){ .menu-items{ grid-template-columns:1fr; } }
+.menu-item{
+  display:flex; justify-content:space-between; gap:20px; padding:20px 0; border-bottom:1px solid var(--line-dark);
+}
+.menu-item .mi-left{ max-width:78%; }
+.menu-item h4{ font-size:19px; color:var(--ivory); font-weight:500; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.menu-item .v-dot{ font-size:9px; color:#7fae7f; border:1px solid #7fae7f; border-radius:50%; width:16px; height:16px; display:inline-flex; align-items:center; justify-content:center; font-weight:800; }
+.menu-item p{ font-size:13.5px; color:var(--stone); margin-top:6px; line-height:1.6; }
+.menu-item .price{ font-family:var(--serif); font-size:19px; color:var(--gold); white-space:nowrap; font-style:italic; }
+
+.menu-note{
+  margin-top:50px; padding-top:26px; border-top:1px solid var(--line-dark);
+  font-size:13px; color:var(--stone); display:flex; justify-content:space-between; gap:30px; flex-wrap:wrap; align-items:center;
+}
+.set-menu-card{
+  margin-top:56px; border:1px solid var(--line); padding:36px; background:rgba(200,162,92,0.05);
+  display:flex; justify-content:space-between; gap:30px; flex-wrap:wrap; align-items:center;
+}
+.set-menu-card h4{ font-family:var(--serif); font-size:24px; color:var(--gold); margin-bottom:8px; }
+.set-menu-card p{ font-size:13.5px; color:var(--ivory-dim); max-width:44ch; line-height:1.7; }
+.set-price-list{ display:flex; gap:26px; flex-wrap:wrap; }
+.set-price{ text-align:center; }
+.set-price .n{ font-family:var(--serif); font-size:26px; font-style:italic; color:var(--ivory); }
+.set-price .l{ font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--stone); margin-top:4px; }
+
+/* ============ WINE ============ */
+#wine{
+  background:linear-gradient(180deg, var(--burgundy-2), #2b0a13 60%, var(--charcoal));
+  color:var(--ivory); overflow:hidden;
+}
+.wine-grid{ display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; }
+@media (max-width:900px){ .wine-grid{ grid-template-columns:1fr; gap:50px; } }
+.wine-copy h2{ font-size:clamp(34px,4.6vw,56px); color:var(--ivory); }
+.wine-copy p{ margin-top:24px; font-size:16px; color:rgba(244,237,224,0.78); max-width:46ch; line-height:1.8; }
+.wine-list{ margin-top:40px; display:flex; flex-direction:column; gap:16px; }
+.wine-row{ display:flex; justify-content:space-between; gap:18px; padding-bottom:14px; border-bottom:1px solid rgba(244,237,224,0.14); }
+.wine-row .wn{ font-size:14px; color:var(--ivory); }
+.wine-row .wr{ font-size:11.5px; color:var(--stone); letter-spacing:.03em; }
+.wine-row .wp{ font-family:var(--serif); font-style:italic; color:var(--gold); font-size:16px; white-space:nowrap; }
+.glass-illustration{ width:100%; max-width:340px; margin:0 auto; }
+
+/* ============ ATMOSPHERE ============ */
+#atmosphere{
+  min-height:80vh; display:flex; align-items:center; justify-content:center; text-align:center;
+  background:
+    radial-gradient(ellipse 50% 60% at 20% 30%, rgba(109,26,43,0.4), transparent 60%),
+    radial-gradient(ellipse 50% 60% at 85% 70%, rgba(200,162,92,0.15), transparent 60%),
+    var(--charcoal);
+  color:var(--ivory); position:relative; overflow:hidden;
+}
+.atmo-candles{ position:absolute; inset:0; display:flex; justify-content:space-around; align-items:flex-end; padding-bottom:0; opacity:.5; pointer-events:none; }
+#atmosphere .content{ position:relative; z-index:2; max-width:720px; padding:130px 6vw; }
+#atmosphere .eyebrow{ justify-content:center; display:flex; }
+#atmosphere h2{ font-size:clamp(36px,6vw,74px); margin-top:20px; }
+#atmosphere h2 em{ font-style:italic; color:var(--gold); }
+#atmosphere p{ margin-top:26px; font-size:16px; color:var(--ivory-dim); max-width:50ch; margin-left:auto; margin-right:auto; }
+
+/* ============ GALLERY / MOMENTS ============ */
+#moments{ background:var(--ivory); }
+.moments-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:var(--line); border:1px solid var(--line); }
+@media (max-width:860px){ .moments-grid{ grid-template-columns:repeat(2,1fr); } }
+.moment-card{
+  background:var(--charcoal); color:var(--ivory); padding:40px 26px; min-height:280px;
+  display:flex; flex-direction:column; justify-content:space-between; position:relative; overflow:hidden;
+}
+.moment-card:nth-child(2n){ background:var(--burgundy-2); }
+.moment-card svg{ width:46px; height:46px; opacity:.9; }
+.moment-card h4{ font-family:var(--serif); font-size:22px; margin-top:20px; }
+.moment-card p{ font-size:12.5px; color:rgba(244,237,224,0.65); margin-top:8px; line-height:1.6; }
+.moment-card .num{ position:absolute; top:20px; right:24px; font-family:var(--serif); font-style:italic; font-size:14px; color:rgba(244,237,224,0.3); }
+
+/* ============ BOOKING ============ */
+#book{
+  background:linear-gradient(150deg,#1c1610,#0c0a08);
+  color:var(--ivory); text-align:center; overflow:hidden; position:relative;
+}
+#book .content{ position:relative; z-index:2; max-width:760px; margin:0 auto; padding:150px 6vw; }
+#book .eyebrow{ justify-content:center; display:flex; }
+#book h2{ font-size:clamp(40px,7vw,86px); margin-top:22px; color:var(--ivory); }
+#book p{ margin-top:24px; font-size:17px; color:var(--ivory-dim); max-width:44ch; margin-left:auto; margin-right:auto; }
+.book-cta-row{ margin-top:48px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+.book-fine{ margin-top:30px; font-size:12.5px; color:var(--stone); }
+
+/* ============ GIFT CARDS ============ */
+#gift{ background:var(--ivory-dim); }
+.gift-grid{ display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; }
+@media (max-width:900px){ .gift-grid{ grid-template-columns:1fr; gap:50px; } }
+.gift-card-visual{
+  aspect-ratio:1.6/1; background:linear-gradient(135deg,#241f17,#0c0a08);
+  border:1px solid var(--gold); position:relative; padding:32px; display:flex; flex-direction:column; justify-content:space-between;
+  box-shadow:0 30px 60px -25px rgba(0,0,0,0.35);
+}
+.gift-card-visual::before{
+  content:''; position:absolute; inset:10px; border:1px solid rgba(200,162,92,0.35); pointer-events:none;
+}
+.gift-card-visual .gc-top{ display:flex; justify-content:space-between; align-items:flex-start; }
+.gift-card-visual .gc-logo{ font-family:var(--serif); font-size:22px; color:var(--ivory); }
+.gift-card-visual .gc-chip{ width:38px; height:26px; border:1px solid var(--gold); border-radius:3px; }
+.gift-card-visual .gc-bottom p{ font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); }
+.gift-card-visual .gc-value{ font-family:var(--serif); font-style:italic; font-size:34px; color:var(--ivory); margin-top:8px; }
+
+.gift-copy h2{ font-size:clamp(32px,4vw,50px); }
+.gift-copy p{ margin-top:22px; font-size:16px; color:#4a4335; max-width:46ch; line-height:1.8; }
+.gift-copy .btn-solid{ margin-top:32px; }
+
+/* ============ LOCATION ============ */
+#location{ background:var(--charcoal); color:var(--ivory); }
+.loc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line-dark); }
+@media (max-width:900px){ .loc-grid{ grid-template-columns:1fr; } }
+.loc-info{ padding:60px; }
+.loc-map{ min-height:420px; filter:grayscale(0.4) contrast(1.05) brightness(0.9); }
+.loc-map iframe{ width:100%; height:100%; min-height:420px; border:0; display:block; }
+.loc-block{ margin-bottom:34px; }
+.loc-block:last-child{ margin-bottom:0; }
+.loc-block .lbl{ font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:10px; }
+.loc-block p, .loc-block a{ font-size:16px; color:var(--ivory-dim); line-height:1.7; }
+.loc-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top:16px; }
+
+/* ============ FOOTER ============ */
+footer{ background:#0c0a08; color:var(--ivory-dim); padding:80px 0 30px; }
+.footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:50px; padding-bottom:60px; border-bottom:1px solid var(--line-dark); }
+@media (max-width:820px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+.footer-grid h5{ font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:20px; font-weight:700; }
+.footer-grid ul li{ margin-bottom:12px; font-size:14px; }
+.footer-grid ul li a:hover{ color:var(--gold); }
+.footer-logo{ font-family:var(--serif); font-size:28px; color:var(--ivory); margin-bottom:16px; }
+.footer-tag{ font-size:14px; color:var(--stone); max-width:34ch; line-height:1.7; }
+.social-row{ display:flex; gap:14px; margin-top:22px; }
+.social-row a{ width:36px; height:36px; border:1px solid var(--line-dark); border-radius:50%; display:flex; align-items:center; justify-content:center; }
+.social-row a:hover{ border-color:var(--gold); }
+.footer-bottom{ padding-top:26px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; font-size:12px; color:var(--stone); }
+
+/* ============ MOBILE STICKY CTA ============ */
+#sticky-cta{
+  position:fixed; left:0; right:0; bottom:0; z-index:400; display:none;
+  background:rgba(22,19,15,0.95); backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);
+  padding:14px 18px; gap:12px;
+}
+#sticky-cta a{ flex:1; text-align:center; padding:14px 10px; font-size:12px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; }
+#sticky-cta .call{ border:1px solid var(--line-dark); color:var(--ivory); }
+#sticky-cta .book{ background:var(--burgundy); color:var(--ivory); }
+@media (max-width:760px){ #sticky-cta{ display:flex; } body{ padding-bottom:70px; } }
+
+/* ============ WATERMARK ============ */
+#demo-watermark{
+  position:fixed; right:16px; bottom:16px; z-index:9000;
+  background:rgba(22,19,15,0.55); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+  border:1px solid rgba(244,237,224,0.14);
+  color:rgba(244,237,224,0.62);
+  font-family:var(--sans); font-size:10.5px; letter-spacing:0.06em;
+  padding:7px 12px; border-radius:2px;
+  opacity:0; transition:opacity 1.1s ease 0.4s;
+  pointer-events:none;
+}
+#demo-watermark.show{ opacity:1; }
+@media (max-width:760px){ #demo-watermark{ bottom:78px; font-size:9.5px; padding:6px 10px; } }
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+}
+
+/* focus states */
+a:focus-visible, button:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<div id="cursor"></div>
+
+<!-- ============ NAV ============ -->
+<header id="site-nav">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">Kendells<span>FRENCH BISTRO &middot; LEEDS</span></a>
+    <nav class="primary-links">
+      <a href="#story">About</a>
+      <a href="#menus">Menus</a>
+      <a href="#moments">Gallery</a>
+      <a href="#gift">Gift Cards</a>
+      <a href="#location">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="tel:01132436553" class="nav-cta">Book a Table</a>
+      <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-nav">
+  <a href="#story" class="mnav-link">About</a>
+  <a href="#menus" class="mnav-link">Menus</a>
+  <a href="#moments" class="mnav-link">Gallery</a>
+  <a href="#gift" class="mnav-link">Gift Cards</a>
+  <a href="#location" class="mnav-link">Contact</a>
+  <a href="tel:01132436553" class="mnav-book">Book a Table &rarr;</a>
+  <div class="mnav-meta">
+    <p>3 St Peters Square, Leeds</p>
+    <p>0113 243 6553</p>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <div class="hero-media media-cover">
+    <img src="https://images.pexels.com/photos/31837779/pexels-photo-31837779.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Candlelit table set for dinner at Kendells Bistro, with wine glasses and warm lighting">
+    <div class="media-scrim"></div>
+  </div>
+  <div class="hero-glow"></div>
+  <svg class="hero-illustration" viewBox="0 0 200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="100" cy="300" rx="46" ry="8" fill="#c8a25c" opacity="0.08"/>
+    <path d="M70 300 L75 150 Q75 120 100 120 Q125 120 125 150 L130 300" stroke="#c8a25c" stroke-width="1.2" opacity="0.6"/>
+    <path d="M60 120 Q100 60 140 120 Q120 135 100 135 Q80 135 60 120 Z" stroke="#c8a25c" stroke-width="1.2" opacity="0.75"/>
+    <ellipse cx="100" cy="55" rx="7" ry="14" fill="#c8a25c" opacity="0.5">
+      <animate attributeName="ry" values="14;18;14" dur="2.4s" repeatCount="indefinite"/>
+    </ellipse>
+    <path d="M100 48 Q95 30 100 20 Q105 30 100 48" fill="#e9c877" opacity="0.85">
+      <animate attributeName="d" values="M100 48 Q95 30 100 20 Q105 30 100 48;M100 48 Q97 28 100 16 Q103 28 100 48;M100 48 Q95 30 100 20 Q105 30 100 48" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+  </svg>
+  <div class="hero-inner">
+    <div class="hero-eyebrow eyebrow on-dark"><span class="rule"></span> French Bistro &middot; Leeds City Centre</div>
+    <h1 class="hero-title reveal">French dining,<br><em>without the fuss.</em></h1>
+    <p class="hero-sub reveal">Quality food, wine and service in a candlelit French bistro at 3 St Peters Square — cloth napkins, an open kitchen, and a blackboard menu that changes with the day.</p>
+    <div class="hero-cta-row reveal">
+      <a href="tel:01132436553" class="btn btn-solid">Book a Table <span class="arrow">&rarr;</span></a>
+      <a href="#menus" class="btn btn-outline">Explore the Menus</a>
+    </div>
+  </div>
+  <div class="hero-foot">
+    <div class="scroll-line"></div>
+    <span class="scroll-indicator">Scroll to discover</span>
+  </div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section id="intro" class="section-pad">
+  <div class="wrap grid">
+    <div class="intro-copy reveal">
+      <p>A little French. A lot of character.</p>
+      <p>Kendells sits opposite Leeds College of Music, part of the city's arts quarter alongside the Playhouse, BBC Leeds and Northern Ballet. Inside, it's a casual, informal place built around one idea: quality food, wine and service, in a proper French bistro atmosphere.</p>
+      <p>No one tops up your glass after every sip, or hovers with an oversized pepper mill. Cloth napkins, but not starched. Candles flickering in wax-covered bottles. An open-plan kitchen you can watch, and a blackboard on the wall that gets rewritten most nights.</p>
+      <div class="photo intro-inline-photo">
+        <img src="https://images.pexels.com/photos/31517300/pexels-photo-31517300.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Warm, informal dining room inside a French bistro with wooden tables and hanging lights">
+      </div>
+      <div class="tag-row">
+        <span class="tag">Open Kitchen</span>
+        <span class="tag">Candlelit Tables</span>
+        <span class="tag">Blackboard Menu</span>
+        <span class="tag">City Centre</span>
+      </div>
+    </div>
+    <div class="intro-panel reveal">
+      <h3>Kitchen Hours</h3>
+      <div class="hours-list">
+        <div class="hours-row closed"><span>Monday</span><b>Closed</b></div>
+        <div class="hours-row"><span>Tuesday</span><b>17:00 &ndash; 21:00</b></div>
+        <div class="hours-row"><span>Wednesday</span><b>17:00 &ndash; 21:00</b></div>
+        <div class="hours-row"><span>Thursday</span><b>17:00 &ndash; 21:00</b></div>
+        <div class="hours-row"><span>Friday</span><b>17:00 &ndash; 21:30</b></div>
+        <div class="hours-row"><span>Saturday</span><b>17:00 &ndash; 21:30</b></div>
+        <div class="hours-row closed"><span>Sunday</span><b>Closed</b></div>
+      </div>
+      <p class="note">These are kitchen hours — the restaurant itself stays open a little later. Booking is recommended, especially Friday and Saturday.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section id="story" class="section-pad">
+  <div class="wrap grid">
+    <div class="reveal">
+      <div class="photo story-photo">
+        <img src="https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&w=1200" alt="A warm, vintage-style restaurant table setting">
+      </div>
+    <div class="chalkboard">
+      <span class="chalk-label">a note from the kitchen</span>
+      <blockquote>&ldquo;All I have tried to do is be honest with you, honest with myself, and above all honest with my food.&rdquo;</blockquote>
+      <div class="sig">Steve Kendell</div>
+      <div class="role">Owner &amp; Chef</div>
+    </div>
+    </div>
+    <div class="story-copy reveal">
+      <div class="eyebrow">The Story</div>
+      <h2>No fuss. Just good food, wine and company.</h2>
+      <p>Kendells was never meant to be a designer restaurant — Steve says as much himself. It's his own take on a Parisian bistro: a bit mismatched, built around the rustic places he loves finding by accident in French villages, and cooked from a lifetime spent eating his way around the country.</p>
+      <p>He doesn't claim to be the best chef in Leeds — that title, he'll tell you, belongs to his mum. What he offers instead is a kitchen that changes its mind daily, chalked up on the board rather than laminated on a menu, and a room that's more interested in your evening than in impressing you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENUS ============ -->
+<section id="menus" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Les Menus</div>
+        <h2>Simple ingredients.<br>French soul.</h2>
+      </div>
+      <p class="lede">Sample menu — dishes, prices and availability may vary by visit. The full à la carte, wine and dessert menus are also available as PDF downloads below.</p>
+    </div>
+
+    <div class="menu-strip reveal">
+      <div class="photo"><img src="https://images.pexels.com/photos/34583386/pexels-photo-34583386.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Warm homemade French onion soup with melted cheese, similar to the Gratinée Lyonnaise"></div>
+      <div class="photo"><img src="https://images.pexels.com/photos/6542790/pexels-photo-6542790.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Sliced ribeye steak plated with sides, similar to the Côte de Boeuf"></div>
+      <div class="photo"><img src="https://images.pexels.com/photos/7593465/pexels-photo-7593465.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Crème brûlée with a caramelised sugar crust"></div>
+    </div>
+
+    <div class="menu-tabs" role="tablist">
+      <button class="menu-tab active" data-tab="food" role="tab" aria-selected="true">Food</button>
+      <button class="menu-tab" data-tab="wine" role="tab" aria-selected="false">Wine &amp; Digestifs</button>
+      <button class="menu-tab" data-tab="dessert" role="tab" aria-selected="false">Dessert</button>
+    </div>
+
+    <!-- FOOD PANEL -->
+    <div class="menu-panel active" data-panel="food">
+      <div class="menu-group">
+        <div class="menu-group-title"><h3>Les Entr&eacute;es</h3><span class="rule"></span></div>
+        <div class="menu-items" id="mi-entrees"></div>
+      </div>
+      <div class="menu-group">
+        <div class="menu-group-title"><h3>Plats Principaux</h3><span class="rule"></span></div>
+        <div class="menu-items" id="mi-mains"></div>
+      </div>
+      <div class="menu-group">
+        <div class="menu-group-title"><h3>Suppl&eacute;ments &mdash; &pound;4.90 each</h3><span class="rule"></span></div>
+        <div class="menu-items" id="mi-sides"></div>
+      </div>
+
+      <div class="set-menu-card">
+        <div>
+          <h4>Tea Time Set Menu</h4>
+          <p>Tue&ndash;Thu, last orders 7:30pm &middot; Fri&ndash;Sat, last orders 6:30pm. Ask your server which dishes are on tonight's set.</p>
+        </div>
+        <div class="set-price-list">
+          <div class="set-price"><div class="n">&pound;31.90</div><div class="l">Two Courses</div></div>
+          <div class="set-price"><div class="n">&pound;36.90</div><div class="l">Three Courses</div></div>
+          <div class="set-price"><div class="n">&pound;44.90</div><div class="l">Three Courses + Wine</div></div>
+        </div>
+      </div>
+
+      <div class="menu-note">
+        <span>&Agrave; can be made vegan on request. Please tell your server about any allergies.</span>
+        <a href="https://www.kendellsbistro.co.uk/_files/ugd/93d279_a73dd760e25648ec97acd4e2ab9c8353.pdf" target="_blank" rel="noopener" class="btn-line">Download Full Food PDF &rarr;</a>
+      </div>
+    </div>
+
+    <!-- WINE PANEL -->
+    <div class="menu-panel" data-panel="wine">
+      <div class="menu-group">
+        <div class="menu-group-title"><h3>Dessert Wines &mdash; 100ml</h3><span class="rule"></span></div>
+        <div class="menu-items" id="mi-dwine"></div>
+      </div>
+      <div class="menu-group">
+        <div class="menu-group-title"><h3>Digestifs</h3><span class="rule"></span></div>
+        <div class="menu-items" id="mi-digestif"></div>
+      </div>
+      <div class="menu-note">
+        <span>Our full wine list stays close to France, glass for glass with the kitchen.</span>
+        <a href="https://www.kendellsbistro.co.uk/_files/ugd/93d279_1d47af96d1bf462787a9d957d90da4a1.pdf" target="_blank" rel="noopener" class="btn-line">Download Full Wine PDF &rarr;</a>
+      </div>
+    </div>
+
+    <!-- DESSERT PANEL -->
+    <div class="menu-panel" data-panel="dessert">
+      <div class="menu-group">
+        <div class="menu-group-title"><h3>Les Desserts &mdash; &pound;9.95 &middot; included in Tea Time set</h3><span class="rule"></span></div>
+        <div class="menu-items" id="mi-dessert"></div>
+      </div>
+      <div class="menu-group">
+        <div class="menu-group-title"><h3>Coffees &amp; Tea</h3><span class="rule"></span></div>
+        <div class="menu-items" id="mi-coffee"></div>
+      </div>
+      <div class="menu-note">
+        <span>Les Fromages &mdash; a selection of French cheeses &mdash; &pound;12.50</span>
+        <a href="https://www.kendellsbistro.co.uk/_files/ugd/93d279_5b2fc268497e48cfbf3cb7a1a79ca765.pdf" target="_blank" rel="noopener" class="btn-line">Download Full Dessert PDF &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ WINE ============ -->
+<section id="wine" class="section-pad">
+  <div class="wrap wine-grid">
+    <div class="wine-copy reveal">
+      <div class="eyebrow on-dark">La Cave</div>
+      <h2>Wine worth<br>lingering over.</h2>
+      <p>Wine isn't an afterthought at Kendells — it's poured to match the kitchen, glass by glass, through an entirely French list. Here's a taste of what closes the evening.</p>
+      <div class="wine-list">
+        <div class="wine-row"><div><div class="wn">Domaine de Coyeux, Cuv&eacute;e Les Trois Fonts</div><div class="wr">Muscat de Beaumes-de-Venise</div></div><div class="wp">&pound;9.50</div></div>
+        <div class="wine-row"><div><div class="wn">Ch&acirc;teau Suduiraut, Castelnau de Suduiraut</div><div class="wr">Sauternes</div></div><div class="wp">&pound;13.50</div></div>
+        <div class="wine-row"><div><div class="wn">Ch&acirc;teau du Juge</div><div class="wr">Cadillac</div></div><div class="wp">&pound;9.95</div></div>
+        <div class="wine-row"><div><div class="wn">R&eacute;my Martin VSOP</div><div class="wr">Cognac Fine Champagne</div></div><div class="wp">&pound;7.50</div></div>
+        <div class="wine-row"><div><div class="wn">P&egrave;re Magloire</div><div class="wr">V.S. Fine Calvados</div></div><div class="wp">&pound;6.50</div></div>
+      </div>
+      <a href="#menus" class="btn btn-outline" style="margin-top:36px;" onclick="document.querySelector('.menu-tab[data-tab=wine]').click()">Explore Wine Menu <span class="arrow">&rarr;</span></a>
+    </div>
+    <div class="reveal">
+      <div class="photo wine-photo">
+        <img src="https://images.pexels.com/photos/312080/pexels-photo-312080.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Red wine being poured into a glass against a dark background">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ATMOSPHERE ============ -->
+<section id="atmosphere">
+  <div class="media-cover">
+    <img src="https://images.pexels.com/photos/32537753/pexels-photo-32537753.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Elegantly set restaurant table in a cozy, candlelit dining room">
+    <div class="media-scrim"></div>
+  </div>
+  <div class="content reveal">
+    <div class="eyebrow on-dark">The Room</div>
+    <h2>Come for the food.<br><em>Stay for the atmosphere.</em></h2>
+    <p>Wooden tables set close together, candles burning down into wax-covered bottles, and a kitchen you can watch work through the pass. It's intimate without trying too hard to be romantic — the kind of room that suits a first date or a Tuesday with old friends just the same.</p>
+  </div>
+</section>
+
+<!-- ============ MOMENTS / GALLERY ============ -->
+<section id="moments" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">In the Room</div>
+        <h2>What an evening<br>at Kendells looks like.</h2>
+      </div>
+      <p class="lede">A restaurant photography set is coming soon — for now, here's a sense of what to expect when you sit down.</p>
+    </div>
+  </div>
+  <div class="moments-grid">
+    <div class="moment-card reveal">
+      <div class="mc-img"><img src="https://images.pexels.com/photos/6670574/pexels-photo-6670574.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Candlelight and a wine bottle on a restaurant table"></div>
+      <div class="mc-scrim"></div>
+      <span class="num">01</span>
+      <div><h4>Candlelight</h4><p>Every table lit by a candle burning down into a wax-covered bottle.</p></div>
+    </div>
+    <div class="moment-card reveal">
+      <div class="mc-img"><img src="https://images.pexels.com/photos/19553654/pexels-photo-19553654.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Chefs preparing food in a dimly lit, collaborative restaurant kitchen"></div>
+      <div class="mc-scrim"></div>
+      <span class="num">02</span>
+      <div><h4>Open Kitchen</h4><p>Watch the pass while the board gets rewritten for tonight's dishes.</p></div>
+    </div>
+    <div class="moment-card reveal">
+      <div class="mc-img"><img src="https://images.pexels.com/photos/3522515/pexels-photo-3522515.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cheese and wine on a wooden board"></div>
+      <div class="mc-scrim"></div>
+      <span class="num">03</span>
+      <div><h4>Les Fromages</h4><p>A selection of French cheeses to close the evening, wine in hand.</p></div>
+    </div>
+    <div class="moment-card reveal">
+      <div class="mc-img"><img src="https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&w=700" alt="Rustic, close-set restaurant table"></div>
+      <div class="mc-scrim"></div>
+      <span class="num">04</span>
+      <div><h4>Close Tables</h4><p>Rustic and a little snug &mdash; more Parisian side-street than dining hall.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOK ============ -->
+<section id="book">
+  <div class="media-cover">
+    <img src="https://images.pexels.com/photos/6670574/pexels-photo-6670574.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Candlelight and wine on a table, set for an evening at Kendells">
+    <div class="media-scrim"></div>
+  </div>
+  <div class="content reveal">
+    <div class="eyebrow on-dark">Reservations</div>
+    <h2>Your table<br>is waiting.</h2>
+    <p>Join us for an evening of French food, wine and good company. Booking is by phone — especially recommended for Friday and Saturday.</p>
+    <div class="book-cta-row">
+      <a href="tel:01132436553" class="btn btn-solid">Call to Book &middot; 0113 243 6553 <span class="arrow">&rarr;</span></a>
+      <a href="mailto:Info@kendellsbistro.co.uk?subject=Table%20Enquiry" class="btn btn-outline">Email an Enquiry</a>
+    </div>
+    <p class="book-fine">Large party or allergy question? Mention it when you call and the team will take care of it.</p>
+  </div>
+</section>
+
+<!-- ============ GIFT CARDS ============ -->
+<section id="gift" class="section-pad">
+  <div class="wrap gift-grid">
+    <div class="reveal">
+      <div class="gift-card-visual">
+        <div class="gc-top">
+          <div class="gc-logo">Kendells</div>
+          <div class="gc-chip"></div>
+        </div>
+        <div class="gc-bottom">
+          <p>Gift Card</p>
+          <div class="gc-value">Any Value</div>
+        </div>
+      </div>
+    </div>
+    <div class="gift-copy reveal">
+      <div class="eyebrow">Gift Cards</div>
+      <h2>Give them an evening to remember.</h2>
+      <p>Kendells gift cards are available to any value, and can be sent by email or by post. Because of how payments work, they can only be purchased over the phone or in person at the restaurant &mdash; no online checkout, just a quick call.</p>
+      <a href="tel:01132436553" class="btn btn-solid">Buy a Gift Card <span class="arrow">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section id="location" class="section-pad">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:0;">
+      <div>
+        <div class="eyebrow on-dark">Find Us</div>
+        <h2>In the heart<br>of Leeds.</h2>
+      </div>
+      <p class="lede" style="color:var(--ivory-dim);">Directly across from the BBC building, sharing an entrance with Yorkshire Dance &mdash; easy to miss on the first visit, worth the second look.</p>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:60px;">
+    <div class="loc-grid">
+      <div class="loc-info">
+        <div class="loc-block">
+          <div class="lbl">Address</div>
+          <p>3 St Peters Square<br>Leeds, West Yorkshire<br>LS9 8AH</p>
+          <div class="loc-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Kendells+Bistro+3+St+Peters+Square+Leeds" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+          </div>
+        </div>
+        <div class="loc-block">
+          <div class="lbl">Phone</div>
+          <a href="tel:01132436553">0113 243 6553</a>
+          <div class="loc-actions"><a href="tel:01132436553" class="btn-line" style="color:var(--gold);">Call Us &rarr;</a></div>
+        </div>
+        <div class="loc-block">
+          <div class="lbl">Email</div>
+          <a href="mailto:Info@kendellsbistro.co.uk">Info@kendellsbistro.co.uk</a>
+          <div class="loc-actions"><a href="mailto:Info@kendellsbistro.co.uk" class="btn-line" style="color:var(--gold);">Email Us &rarr;</a></div>
+        </div>
+        <div class="loc-block">
+          <div class="lbl">Kitchen Hours</div>
+          <p>Tue&ndash;Thu 17:00&ndash;21:00 &middot; Fri&ndash;Sat 17:00&ndash;21:30<br>Closed Mon &amp; Sun</p>
+        </div>
+      </div>
+      <div class="loc-map">
+        <iframe src="https://www.google.com/maps?q=Kendells+Bistro,3+St+Peters+Square,Leeds,LS9+8AH&output=embed" title="Map showing Kendells Bistro at 3 St Peters Square, Leeds" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Kendells</div>
+        <p class="footer-tag">A casual, informal French bistro in Leeds City Centre &mdash; quality food, wine and service, no fuss.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/kendellsbistro/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://www.facebook.com/KendellsBistro/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h-2a2 2 0 00-2 2v3H8v3h3v6h3v-6h2.5l.5-3H14v-2a1 1 0 011-1h2z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@kendellsbistro" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4c0 3 2 5 5 5v3c-2 0-3.5-.6-5-1.6V16a5 5 0 11-5-5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#story">About</a></li>
+          <li><a href="#menus">Menus</a></li>
+          <li><a href="#moments">Gallery</a></li>
+          <li><a href="#gift">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <ul>
+          <li><a href="#location">3 St Peters Square, Leeds</a></li>
+          <li><a href="tel:01132436553">0113 243 6553</a></li>
+          <li><a href="mailto:Info@kendellsbistro.co.uk">Info@kendellsbistro.co.uk</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Kitchen Hours</h5>
+        <ul>
+          <li>Tue&ndash;Thu &middot; 17:00&ndash;21:00</li>
+          <li>Fri&ndash;Sat &middot; 17:00&ndash;21:30</li>
+          <li>Mon &amp; Sun &middot; Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Kendells Bistro. All rights reserved.</span>
+      <a href="https://www.kendellsbistro.co.uk/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE STICKY CTA ============ -->
+<div id="sticky-cta">
+  <a href="tel:01132436553" class="call">Call</a>
+  <a href="tel:01132436553" class="book">Book a Table</a>
+</div>
+
+<div id="demo-watermark">For Demo Build by Shehroz</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* ================= DATA ================= */
+const FOOD = {
+  entrees: [
+    ["Escargots &agrave; la Bourguignonne","Burgundy snails, garlic parsley butter, puff pastry","12.90"],
+    ["Tarte Betterave et Ch&egrave;vre","Goats cheese, pickled beetroot, orange tart, herb crumb","9.90","V"],
+    ["P&acirc;t&eacute; de Foie de Canard","Duck liver p&acirc;t&eacute;, cognac, pickled red onions, chutney, sourdough toasts","9.90"],
+    ["Salade au Roquefort","Roquefort, pear, chicory, walnuts, roquefort dressing","11.90","V"],
+    ["Oeufs en Meurette","Poached eggs, red wine sauce, bacon, roast shallot, mushroom garlic sourdough","10.50"],
+    ["Salade Fris&eacute;e","Smoked bacon, poached egg, croutons, frisée lettuce, french dressing","9.90"],
+    ["Boudin Noir","French black pudding, apple pur&eacute;e, caramelised onions","11.50"],
+    ["Gratin&eacute;e Lyonnaise","Classic French onion soup, gruy&egrave;re cheese, croutons","12.50"],
+    ["Soupe de Poisson","Classic French fish soup, rouille, gruy&egrave;re, croutons","12.50"],
+    ["Saumon Rillette","Salmon, mayonnaise, pink peppercorns, red onion salad, sourdough toast","9.90"]
+  ],
+  mains: [
+    ["C&ocirc;te de Boeuf","Grilled ribeye steak, chips, onion rings, tomato, peppercorn sauce","38.00"],
+    ["Jarret d'Agneau","Slow braised lamb shank, rosemary vegetable broth, mash","31.90"],
+    ["Confit de Canard","Slow roast duck leg, dauphinoise potatoes, haricot vert, shallots, black pudding","27.00"],
+    ["Pav&eacute; d'Agneau","Roast rump of lamb, lyonnaise potatoes, French-style peas, rosemary sauce","31.90"],
+    ["C&ocirc;te de Veau","Grilled veal chop, cream, tarragon, mushroom, white wine, truffle oil","32.00"],
+    ["Jarret de Jambon aux Lentilles du Puy","Slow braised ham hock, puy lentils, baby onions, garlic, red wine jus","24.00"],
+    ["Supr&ecirc;me de Volaille","Roast chicken breast, spinach, leek and potato croquette, tarragon cream sauce","24.90"],
+    ["Joue de Boeuf &agrave; la Bourguignonne","Slow braised beef cheek, red wine, lardons, shallots, garlic, mushroom, mash","27.00"],
+    ["Celeriac Wellington","Roast celeriac mushroom duxelles, puff pastry, truffle chive mash, beetroot gravy","22.00","V"],
+    ["Camembert au Four","Baked whole camembert, honey chilli glaze, cro&ucirc;tes, new potatoes, cornichons, grapes","22.00","V"],
+    ["Cabillaud","Roast cod, tomato, basil, herb crust, pasta","30.00"],
+    ["Croquette de Poisson","Cod, salmon and prawn fishcake, tartar sauce","22.00"]
+  ],
+  sides: [
+    ["Chou Fleur Mornay","Cauliflower cheese",""],
+    ["Pomme Dauphinoise","Potatoes, garlic, cream",""],
+    ["Haricots Verts","Green beans",""],
+    ["Pomme Frites","Chips",""],
+    ["Pomme Pur&eacute;e","Creamed potatoes",""],
+    ["Brocoli","Broccoli, chilli, garlic",""]
+  ]
+};
+const DESSERT = {
+  dessert: [
+    ["Cr&egrave;me Br&ucirc;l&eacute;e","Vanilla pod custard, burnt sugar",""],
+    ["Tarte Tatin","Caramelised apple tart, vanilla ice cream",""],
+    ["Fondant au Chocolat","Warm dark chocolate sponge, vanilla ice cream &mdash; 15 min cook time",""],
+    ["G&acirc;teau de Fromage","Raspberry cheesecake",""],
+    ["Frangipane","Pear frangipane, cr&egrave;me fra&icirc;che",""],
+    ["Ice Cream","Vanilla ice cream",""]
+  ],
+  coffee: [
+    ["Espresso","","3.40"],
+    ["Double Espresso","","3.60"],
+    ["Americano","","3.80"],
+    ["Machiato","","3.80"],
+    ["Cappuccino","","4.00"],
+    ["Latte","","4.20"],
+    ["Selection of Teas","Ask about flavours","3.50"]
+  ]
+};
+const WINE = {
+  dwine: [
+    ["Domaine de Coyeux, Cuv&eacute;e Les Trois Fonts","Muscat de Beaumes-de-Venise","9.50"],
+    ["Ch&acirc;teau Suduiraut, Castelnau de Suduiraut","Sauternes","13.50"],
+    ["Quady Winery, 'Elysium'","California, Black Muscat","11.50"],
+    ["Ch&acirc;teau du Juge","Cadillac","9.95"]
+  ],
+  digestif: [
+    ["Courvoisier","V.S. Cognac","4.95"],
+    ["Hennessy","VSOP Fine de Cognac","5.90"],
+    ["Taylor's, 75ml","Late Bottled Vintage Port","7.95"],
+    ["Martell VS","Single Distillery Fine Cognac","4.90"],
+    ["R&eacute;my Martin","VSOP Cognac Fine Champagne","7.50"],
+    ["P&egrave;re Magloire","V.S. Fine Calvados","6.50"]
+  ]
+};
+
+function renderItems(containerId, items){
+  const el = document.getElementById(containerId);
+  if(!el) return;
+  el.innerHTML = items.map(it => {
+    const [name, desc, price, veg] = it;
+    return `<div class="menu-item">
+      <div class="mi-left">
+        <h4>${name}${veg ? '<span class="v-dot" title="Vegetarian">V</span>' : ''}</h4>
+        ${desc ? `<p>${desc}</p>` : ''}
+      </div>
+      ${price ? `<div class="price">&pound;${price}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+renderItems('mi-entrees', FOOD.entrees);
+renderItems('mi-mains', FOOD.mains);
+renderItems('mi-sides', FOOD.sides);
+renderItems('mi-dessert', DESSERT.dessert);
+renderItems('mi-coffee', DESSERT.coffee);
+renderItems('mi-dwine', WINE.dwine);
+renderItems('mi-digestif', WINE.digestif);
+
+/* ================= MENU TABS ================= */
+document.querySelectorAll('.menu-tab').forEach(tab=>{
+  tab.addEventListener('click', ()=>{
+    document.querySelectorAll('.menu-tab').forEach(t=>{t.classList.remove('active'); t.setAttribute('aria-selected','false');});
+    tab.classList.add('active'); tab.setAttribute('aria-selected','true');
+    document.querySelectorAll('.menu-panel').forEach(p=>p.classList.remove('active'));
+    document.querySelector(`.menu-panel[data-panel="${tab.dataset.tab}"]`).classList.add('active');
+  });
+});
+
+/* ================= NAV SCROLL STATE ================= */
+const nav = document.getElementById('site-nav');
+window.addEventListener('scroll', ()=>{
+  if(window.scrollY > 60){ nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); }
+}, {passive:true});
+
+/* ================= MOBILE NAV ================= */
+const burger = document.getElementById('burgerBtn');
+const mobileNav = document.getElementById('mobile-nav');
+burger.addEventListener('click', ()=>{
+  const isOpen = mobileNav.classList.toggle('open');
+  burger.setAttribute('aria-expanded', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+});
+document.querySelectorAll('#mobile-nav a').forEach(a=>{
+  a.addEventListener('click', ()=>{
+    mobileNav.classList.remove('open');
+    burger.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  });
+});
+
+/* ================= CUSTOM CURSOR ================= */
+const cursor = document.getElementById('cursor');
+if(window.matchMedia('(hover: hover)').matches && window.innerWidth > 860){
+  window.addEventListener('mousemove', e=>{
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%,-50%)`;
+  });
+  document.querySelectorAll('a, button, .menu-tab').forEach(el=>{
+    el.addEventListener('mouseenter', ()=>cursor.classList.add('grow'));
+    el.addEventListener('mouseleave', ()=>cursor.classList.remove('grow'));
+  });
+}
+
+/* ================= REVEAL + PARALLAX ================= */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if(window.gsap && window.ScrollTrigger && !reduceMotion){
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to('.hero-title', {opacity:1, y:0, duration:1.1, delay:0.15, ease:'power3.out'});
+  gsap.to('.hero-sub', {opacity:1, y:0, duration:1, delay:0.4, ease:'power3.out'});
+  gsap.to('.hero-cta-row', {opacity:1, y:0, duration:1, delay:0.6, ease:'power3.out'});
+
+  gsap.utils.toArray('.reveal').forEach(el=>{
+    if(el.closest('#hero')) return;
+    gsap.to(el, {
+      opacity:1, y:0, duration:0.9, ease:'power2.out',
+      scrollTrigger:{ trigger:el, start:'top 88%' }
+    });
+  });
+
+  gsap.utils.toArray('.moment-card').forEach((el,i)=>{
+    gsap.to(el, { opacity:1, y:0, duration:0.7, delay:i*0.06, ease:'power2.out',
+      scrollTrigger:{ trigger:el, start:'top 92%' } });
+  });
+
+  gsap.to('.hero-glow', { y:80, ease:'none', scrollTrigger:{ trigger:'#hero', start:'top top', end:'bottom top', scrub:true } });
+  gsap.to('.hero-illustration', { y:-60, ease:'none', scrollTrigger:{ trigger:'#hero', start:'top top', end:'bottom top', scrub:true } });
+} else {
+  document.querySelectorAll('.reveal').forEach(el=>{ el.style.opacity = 1; el.style.transform = 'none'; });
+}
+
+setTimeout(()=>document.getElementById('demo-watermark').classList.add('show'), 800);
+</script>
+
+</body>
+</html>
